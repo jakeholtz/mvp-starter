@@ -3,7 +3,7 @@ import React from 'react';
 const CapitalDisplay = (props) => (
   <div>
     <h4> Capital Display </h4>
-    Capital is ... { props.capital }
+    Capital is ...  { props.capital }
   </div>
 )
 

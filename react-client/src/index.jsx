@@ -21,8 +21,7 @@ class App extends React.Component {
       contentType: 'application/json',
       success: (data) => {
         console.log('CLIENT -> SERVER [Post Sent]');
-        this.state.capitals[0] = data;
-        console.log(this.state.capitals[0])
+        this.setState({capitals: [data]})
       },
       error: function(error) {
         console.error(error);
