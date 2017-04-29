@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS countriesdb;
+DROP DATABASE IF EXISTS WorldApp;
 
-CREATE DATABASE countriesdb;
+CREATE DATABASE WorldApp;
 
-USE countriesdb;
+USE WorldApp;
 
 CREATE TABLE countries (
   id int NOT NULL AUTO_INCREMENT,

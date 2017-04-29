@@ -14,7 +14,6 @@ class App extends React.Component {
 
   search (term) {
     console.log(`${term} was searched`);
-
     $.ajax({
       url: 'http://localhost:3000/search',
       method: 'POST',
