@@ -30,3 +30,11 @@ section {
 strong {
   color: #1f7cb2;
 }
+
+footer {
+  font-size: 8px;
+  font-style: italic;
+  color: #63b4e3;
+  border: none;
+  text-align: right;
+}
