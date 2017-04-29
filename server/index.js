@@ -8,6 +8,7 @@ app.use(express.static(__dirname + '/../react-client/dist'));
 
 app.post('/search', function (req, res) {
   res.send('CLIENT -> SERVER [Post Received]')
+  console.log(req)
   console.log('CLIENT -> SERVER [Post Received]');
 });
 

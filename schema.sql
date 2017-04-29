@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS countries;
+DROP DATABASE IF EXISTS countriesdb;
 
 CREATE DATABASE countriesdb;
 

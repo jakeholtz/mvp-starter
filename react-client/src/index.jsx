@@ -18,7 +18,7 @@ class App extends React.Component {
     $.ajax({
       url: 'http://localhost:3000/search',
       method: 'POST',
-      data: JSON.stringify({"Country": `${term}`}),
+      data: JSON.stringify({"country": `${term}`}),
       contentType: 'application/json',
       success: function(data) {
         console.log('CLIENT -> SERVER [Post Sent]');
