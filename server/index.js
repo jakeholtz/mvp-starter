@@ -19,7 +19,6 @@ app.post('/search', function (req, res) {
     } else if (success.length === 0) {
       res.send("NONE. NOT A COUNTRY!");
     } else {
-      console.log(success[0].capital);
       res.send(success[0].capital);
     }
   });

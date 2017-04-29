@@ -31,9 +31,9 @@ class App extends React.Component {
 
   render () {
     return (<div>
-      <h1>Capitals Of The World</h1>
-      <CapitalDisplay capital={this.state.capitals[0]}/>
+      <h1>WorldApp</h1>
       <Search onSearch={this.search.bind(this)}/>
+      <CapitalDisplay capital={this.state.capitals[0]}/>
     </div>)
   }
 }

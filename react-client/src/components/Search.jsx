@@ -23,7 +23,7 @@ class Search extends React.Component {
   render () {
     return (<div>
     <h4>Find a capital</h4>
-      Enter a country: <input value={this.search.term} onChange={this.onChange}/>
+      <em>Enter a country: </em><input value={this.search.term} onChange={this.onChange}/>
       <button onClick={this.search}>Find Capital</button>
     </div>)
   }
