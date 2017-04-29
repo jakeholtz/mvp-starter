@@ -9,14 +9,4 @@ var connection = mysql.createConnection({
 
 connection.connect();
 
-var selectAll = function(callback) {
-  connection.query('SELECT * FROM countries', function(err, results, fields) {
-    if(err) {
-      callback(err, null);
-    } else {
-      callback(null, results);
-    }
-  });
-};
-
-module.exports.selectAll = selectAll;
+module.exports = connection;

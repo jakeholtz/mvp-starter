@@ -20,7 +20,7 @@ class App extends React.Component {
       data: JSON.stringify({"country": `${term}`}),
       contentType: 'application/json',
       success: function(data) {
-        console.log('CLIENT -> SERVER [Post Sent]');
+        console.log('CLIENT -> SERVER [Post Sent]', data);
       },
       error: function(error) {
         console.error(error);
