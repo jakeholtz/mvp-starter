@@ -19,20 +19,21 @@ class App extends React.Component {
       method: 'POST',
       data: JSON.stringify({"country": `${term}`}),
       contentType: 'application/json',
-      success: function(data) {
-        console.log('CLIENT -> SERVER [Post Sent]', data);
+      success: (data) => {
+        console.log('CLIENT -> SERVER [Post Sent]');
+        this.state.capitals[0] = data;
+        console.log(this.state.capitals[0])
       },
       error: function(error) {
         console.error(error);
       }
-
     });
   }
 
   render () {
     return (<div>
       <h1>Capitals Of The World</h1>
-      <CapitalDisplay capitals={this.state.capitals}/>
+      <CapitalDisplay capital={this.state.capitals[0]}/>
       <Search onSearch={this.search.bind(this)}/>
     </div>)
   }
